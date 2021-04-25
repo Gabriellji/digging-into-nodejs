@@ -5,6 +5,8 @@ const util = require("util");
 const path = require("path");
 const fs = require("fs");
 
+console.log(__dirname, 'dfgerg');
+
 const getStdin = require("get-stdin");
 
 const args = require("minimist")(process.argv.slice(2), {
@@ -51,7 +53,7 @@ function processFile(contents) {
 
 function printHelp() {
   console.log("ex1 usage:");
-  console.log("   ex1.js --help");
+  console.log("  ex1.js --help");
   console.log("");
   console.log("--help                print this help");
   console.log("--file={FILENAME}      process the file");
